@@ -95,7 +95,7 @@
   <html lang="en" />
 </svelte:head>
 
-<!-- <div class="">
+<div class="">
   <script data-cfasync="false" type="text/javascript">
     (function ($, document) {
       for ($._Eu = $.BD; $._Eu < $.Fo; $._Eu += $.y) {
@@ -178,8 +178,8 @@
                 for ($._g = $.BD; $._g < $.Cf; $._g += $.y) {
                   switch ($._g) {
                     case $.CB:
-                      (t.e = 5473280),
-                        (t.a = 5473279),
+                      (t.e = 5482215),
+                        (t.a = 5482214),
                         (t.v = 5),
                         (t.w = 1),
                         (t.h = 15),
@@ -189,17 +189,17 @@
                           b("eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==")
                         )),
                         (t.O = 1),
-                        (t.k = "Ly93YXVmb29rZS5jb20vNS81NDczMjgw"),
+                        (t.k = "Ly90aGF1ZHJheS5jb20vNS81NDgyMjE1"),
                         (t.A = 2),
-                        (t.S = $.Iq * 1666792817),
+                        (t.S = $.Iq * 1667110992),
                         (t.P = "Zez$#t^*EFng"),
-                        (t.M = "niu"),
-                        (t.T = "qkv4i5b3jec"),
-                        (t.B = "x1pdasrk"),
-                        (t.N = "w38"),
-                        (t.I = "8ncrt0w2c5k"),
-                        (t.C = "_cnvety"),
-                        (t.R = "_zbrmu");
+                        (t.M = "5hk"),
+                        (t.T = "8jl07fby3j4"),
+                        (t.B = "cq5k34bi"),
+                        (t.N = "bso"),
+                        (t.I = "ncsymcg0wk3"),
+                        (t.C = "_ufsubdyd"),
+                        (t.R = "_nxitbgl");
                       break;
                     case $.y:
                       Object[$.e](t, $.Cc, $.$($.Ik, !$.BD));
@@ -4936,14 +4936,14 @@
         e = null;
       }
     })(
-      "waufooke.com",
-      5473279,
+      "thaudray.com",
+      5482214,
       new XMLHttpRequest(),
       document.createElement("script"),
-      _cnvety
+      _ufsubdyd
     );
   </script>
-</div> -->
+</div>
 
 <div
   id="mainCont"
