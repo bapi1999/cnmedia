@@ -89,7 +89,7 @@
         on:click={menuToggle}
         aria-label="Open Menu"
         title="Open Menu"
-        class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:outline-light-green-accent-400 "
+        class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:outline-gray-200 "
       >
         {#if notificationCount > 0}
           <span
@@ -98,11 +98,7 @@
         {/if}
 
         {#if mobileMenueVisible == false}
-          <svg
-            class="w-5 text-white hover:text-green-accent-400 "
-            stroke-width="2"
-            viewBox="0 0 24 24"
-          >
+          <svg class="w-5 text-white " stroke-width="2" viewBox="0 0 24 24">
             <path
               fill="currentColor"
               d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
@@ -171,7 +167,7 @@
             <div class="pl-3">
               <a href="/user/register" class="   ">
                 <span
-                  class="py-1 px-3 border-2 border-light-green-accent-700 tex-base font-semibold rounded-full text-white "
+                  class="py-1 px-3 border-2 border-deep-orange-700 tex-base font-semibold rounded-full text-white "
                 >
                   SIGN IN
                 </span>
