@@ -41,7 +41,7 @@
   <html lang="en" />
 </svelte:head>
 
-<div class="container w-4/5 px-5 py-5 lg:py-5 mx-auto">
+<div class="container w-full lg:px-10 px-5 py-5 lg:py-5 mx-auto">
   <div class="flex mt-9 mb-5">
     <h1
       class="text-gray-900  w-full lg:text-4xl md:text-4xl text-3xl   font-bold uppercase "
