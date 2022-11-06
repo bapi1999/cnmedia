@@ -4,6 +4,8 @@
   import { doc, getDoc } from "firebase/firestore";
   import { onMount } from "svelte";
   import { goto } from "$app/navigation";
+  import Vignette from "$lib/vignette.svelte";
+  import InpagePush from "$lib/inpagepush.svelte";
 
   let title = "";
   let postId = "";
@@ -39,6 +41,8 @@
   <title>{title}</title>
   <meta name="robots" content="noindex nofollow" />
   <html lang="en" />
+  <Vignette />
+  <InpagePush />
 </svelte:head>
 
 <div class="container w-full lg:px-10 px-5 py-5 lg:py-5 mx-auto">
