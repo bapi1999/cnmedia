@@ -4,7 +4,7 @@
   import { onMount } from "svelte";
   import { IsLoggedin, UserName } from "../authStore";
   import { AlreadyViewed, ClickCount, TotalClick } from "../scroolStore";
-  import { doc, getDoc, collection, setDoc } from "firebase/firestore";
+  import { doc, getDoc, updateDoc, setDoc } from "firebase/firestore";
   import { onAuthStateChanged } from "firebase/auth";
   import { goto } from "$app/navigation";
   import { page } from "$app/stores";
