@@ -50,7 +50,7 @@
     on:click={() => {
       history.back();
     }}
-    class="rounded-full bg-rose-600 p-2 mr-4 mb-4"
+    class="rounded-full bg-rose-600 p-2 mr-8 mb-12"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
