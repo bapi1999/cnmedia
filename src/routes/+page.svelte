@@ -93,13 +93,13 @@
   }
 </script>
 
-<!-- <svelte:head>
+<svelte:head>
   <title>CnMedia - get leatest update on Bollywood and HollyWood</title>
   <meta name="robots" content="noindex nofollow" />
   <html lang="en" />
-  <Vignette />
+  <!-- <Vignette /> -->
   <InpagePush />
-</svelte:head> -->
+</svelte:head>
 
 <div
   id="mainCont"
