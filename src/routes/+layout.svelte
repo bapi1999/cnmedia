@@ -105,9 +105,6 @@
 </script>
 
 <svelte:head>
-  <title>CnMedia - get leatest update on Bollywood and HollyWood</title>
-  <meta name="robots" content="noindex nofollow" />
-  <html lang="en" />
   <Vignette />
   <InpagePush />
 </svelte:head>
@@ -118,6 +115,6 @@
 
 <slot />
 
-<!-- <div class="shadow-md border-t-2 border-gray-500">
+<div class=" fixed bottom-0  w-full z-20 shadow-md ">
   <Footer />
-</div> -->
+</div>

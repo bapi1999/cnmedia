@@ -15,8 +15,8 @@
   import { PostList, LastVisible, ClickCount } from "../scroolStore";
   import CnMedia from "$lib/assets/cnmedia.png";
 
-  import Vignette from "$lib/vignette.svelte";
-  import InpagePush from "$lib/inpagepush.svelte";
+  // import Vignette from "$lib/vignette.svelte";
+  // import InpagePush from "$lib/inpagepush.svelte";
 
   let lastVisible = "";
   $: reachlast = false;
@@ -93,13 +93,13 @@
   }
 </script>
 
-<!-- <svelte:head>
+<svelte:head>
   <title>CnMedia - get leatest update on Bollywood and HollyWood</title>
   <meta name="robots" content="noindex nofollow" />
   <html lang="en" />
-  <Vignette />
-  <InpagePush />
-</svelte:head> -->
+  <!-- <Vignette />
+  <InpagePush /> -->
+</svelte:head>
 
 <div
   id="mainCont"

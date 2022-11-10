@@ -4,8 +4,8 @@
   import { doc, getDoc } from "firebase/firestore";
   import { onMount } from "svelte";
   import { goto } from "$app/navigation";
-  import Vignette from "$lib/vignette.svelte";
-  import InpagePush from "$lib/inpagepush.svelte";
+  // import Vignette from "$lib/vignette.svelte";
+  // import InpagePush from "$lib/inpagepush.svelte";
 
   let title = "";
   let postId = "";
@@ -37,13 +37,13 @@
   });
 </script>
 
-<!-- <svelte:head>
+<svelte:head>
   <title>{title}</title>
   <meta name="robots" content="noindex nofollow" />
   <html lang="en" />
-  <Vignette />
-  <InpagePush />
-</svelte:head> -->
+  <!-- <Vignette />
+  <InpagePush /> -->
+</svelte:head>
 
 <div class=" fixed   bottom-0 right-0 z-20 ">
   <button
@@ -71,6 +71,11 @@
 </div>
 
 <div class="container w-full lg:px-10 px-5 py-5 lg:py-5 mx-auto">
+  <script
+    data-cfasync="false"
+    type="text/javascript"
+    src="//p450758.clksite.com/adServe/banners?tid=450758_885234_1"
+  ></script>
   <div class="flex mt-9 mb-5">
     <h1
       class="text-gray-900  w-full lg:text-4xl md:text-4xl text-3xl   font-bold uppercase "
@@ -84,6 +89,12 @@
       class="object-scale-down object-center mx-auto mt-8 rounded-2xl "
       alt=""
     />
+
+    <script
+      data-cfasync="false"
+      type="text/javascript"
+      src="//p450758.clksite.com/adServe/banners?tid=450758_885234_0"
+    ></script>
 
     <div class="text-gray-900 text-xl mt-14 ">{@html descriptionText}</div>
   </div>

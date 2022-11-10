@@ -72,9 +72,9 @@
       <img src={cnmedia} alt="" class="w-7 h-7" />
       <span class="ml-1 text-xl font-thin   text-white">CnMedia</span>
     </a>
-    {#if $IsLoggedin == true && $AlreadyViewed == false}
+    <!-- {#if $IsLoggedin == true && $AlreadyViewed == false}
       <div class=" w-full flex pl-5 pr-2  items-center ">
-        <!-- <div class="bg-blue-400">00000</div> -->
+        
         <div class="w-full bg-gray-300 rounded-full h-2.5">
           <div
             class="bg-indigo-accent-400 h-2.5 rounded-full"
@@ -82,7 +82,7 @@
           />
         </div>
       </div>
-    {/if}
+    {/if} -->
 
     <div class="ml-auto">
       <button
