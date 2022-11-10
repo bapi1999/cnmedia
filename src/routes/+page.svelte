@@ -93,13 +93,13 @@
   }
 </script>
 
-<svelte:head>
+<!-- <svelte:head>
   <title>CnMedia - get leatest update on Bollywood and HollyWood</title>
   <meta name="robots" content="noindex nofollow" />
   <html lang="en" />
-  <!-- <Vignette /> -->
+  <Vignette />
   <InpagePush />
-</svelte:head>
+</svelte:head> -->
 
 <div
   id="mainCont"
@@ -127,9 +127,9 @@
             >
               {item.title}
             </p>
-            <p class="mb-4 h-24 overflow-hidden text-gray-700 textLine3">
+            <!-- <p class="mb-4 h-24 overflow-hidden text-gray-700 textLine3">
               {@html item.zDescription}
-            </p>
+            </p> -->
             <div class="flex space-x-4">
               <div class="">
                 <img src={CnMedia} class="w-10 h-10" alt="" />

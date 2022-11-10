@@ -104,13 +104,13 @@
   }
 </script>
 
-<!-- <svelte:head>
+<svelte:head>
   <title>CnMedia - get leatest update on Bollywood and HollyWood</title>
   <meta name="robots" content="noindex nofollow" />
   <html lang="en" />
   <Vignette />
   <InpagePush />
-</svelte:head> -->
+</svelte:head>
 
 <div class="top-0 w-full sticky z-20 shadow-xl">
   <UserNavber {userName} {pathname} />
@@ -118,6 +118,6 @@
 
 <slot />
 
-<div class="shadow-md border-t-2 border-gray-500">
+<!-- <div class="shadow-md border-t-2 border-gray-500">
   <Footer />
-</div>
+</div> -->
