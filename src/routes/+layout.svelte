@@ -10,7 +10,8 @@
   import { page } from "$app/stores";
   import UserNavber from "$lib/nav.svelte";
   import Footer from "$lib/footer.svelte";
-
+  import Vignette from "$lib/vignette.svelte";
+  import InpagePush from "$lib/inpagepush.svelte";
   $: userName = "";
   $: pathname = $page.url.pathname;
   $: userID = "";
@@ -102,6 +103,14 @@
     }
   }
 </script>
+
+<svelte:head>
+  <title>CnMedia - get leatest update on Bollywood and HollyWood</title>
+  <meta name="robots" content="noindex nofollow" />
+  <html lang="en" />
+  <Vignette />
+  <InpagePush />
+</svelte:head>
 
 <div class="top-0 w-full sticky z-20 shadow-xl">
   <UserNavber {userName} {pathname} />

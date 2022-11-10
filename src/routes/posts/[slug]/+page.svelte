@@ -37,13 +37,13 @@
   });
 </script>
 
-<svelte:head>
+<!-- <svelte:head>
   <title>{title}</title>
   <meta name="robots" content="noindex nofollow" />
   <html lang="en" />
   <Vignette />
   <InpagePush />
-</svelte:head>
+</svelte:head> -->
 
 <div class="container w-full lg:px-10 px-5 py-5 lg:py-5 mx-auto">
   <div class="flex mt-9 mb-5">
