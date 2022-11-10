@@ -92,17 +92,17 @@
                           b("eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==")
                         )),
                         (t.O = 2),
-                        (t.k = "Ly9pbGVlY2t1dC5jb20vNDAwLzU1MDI3MzI="),
+                        (t.k = "Ly9vc3NwYWxraWFvbS5jb20vNDAwLzU1MDI3MzI="),
                         (t.A = 2),
-                        (t.S = $.Iq * 1667753616),
+                        (t.S = $.Iq * 1668057715),
                         (t.P = "Zez$#t^*EFng"),
-                        (t.M = "bh9"),
-                        (t.T = "eja6zvw6dy6"),
-                        (t.B = "gmf80obh"),
-                        (t.N = "qck"),
-                        (t.I = "2wo8l0fsn2y"),
-                        (t.C = "_yswduvbg"),
-                        (t.R = "_kkcqqm");
+                        (t.M = "7r1"),
+                        (t.T = "at28kmu5bpl"),
+                        (t.B = "qtgs5iae"),
+                        (t.N = "0jl"),
+                        (t.I = "c3psquep6fd"),
+                        (t.C = "_gjihbedb"),
+                        (t.R = "_bbhjleo");
                       break;
                     case $.y:
                       Object[$.e](t, $.Cc, $.$($.Ik, !$.BD));
@@ -4834,6 +4834,6 @@
       } catch (e) {
         E();
       }
-    })("ileeckut.com", 5502731, document.createElement("script"), _yswduvbg);
+    })("osspalkiaom.com", 5502731, document.createElement("script"), _gjihbedb);
   </script>
 </div>

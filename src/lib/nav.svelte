@@ -165,7 +165,7 @@
             </a>
           {:else}
             <div class="pl-3">
-              <a href="/user/register" class="   ">
+              <a href="/register" class="   ">
                 <span
                   class="py-1 px-3 border-2 border-deep-orange-700 tex-base font-semibold rounded-full text-white "
                 >
@@ -268,33 +268,6 @@
               </svg>
 
               <span class="ml-2 text-sm ">Affiliate</span>
-            </a>
-          </li>
-
-          <li class=" {pathname === '/help' ? 'selected' : 'notSelected'}  ">
-            <a
-              on:click={menuToggle}
-              href="/help"
-              aria-label="Help"
-              title="Help"
-              class=" flex tracking-wide  "
-            >
-              <svg
-                class="w-5 h-5 stroke-current"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <circle cx="12" cy="12" r="9" />
-                <line x1="12" y1="17" x2="12" y2="17.01" />
-                <path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" />
-              </svg>
-
-              <span class="ml-2 text-sm ">Help</span>
             </a>
           </li>
 
