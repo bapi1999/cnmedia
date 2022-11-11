@@ -72,7 +72,7 @@
 
       posts = posts.concat(newPosts);
       PostList.update(() => posts);
-      console.log(posts.length);
+      // console.log(posts.length);
 
       lastVisible = querySnapshot.docs[querySnapshot.docs.length - 1];
       LastVisible.update(() => lastVisible);

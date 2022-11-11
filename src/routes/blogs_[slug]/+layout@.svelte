@@ -12,7 +12,7 @@
   $: siteList = [];
 
   let docID = $page.params.slug;
-  console.log("page", docID);
+  // console.log("page", docID);
 
   const d = new Date();
   let date = d.getDate();
@@ -36,7 +36,7 @@
   });
 
   $: if ($ClickCount == $TotalClick) {
-    alert("Thank you for surfing the Cn-Media.");
+    alert("Thank you for surfing this Website.");
     sendViewdStatus();
     AlreadyViewed.update(() => true);
   }
@@ -62,8 +62,8 @@
   }
 
   async function sendViewdStatus() {
-    // console.log("sendViewdStatus");
-    siteList = [...siteList, docID];
+    console.log("sendViewdStatus");
+    siteList.push(docID);
     try {
       if (documentExist == false) {
         await setDoc(doc(db, "USER", userID, "TODAYS_ADS_SITE", today), {
@@ -83,8 +83,6 @@
     }
   }
 </script>
-
-<slot><!-- optional fallback --></slot>
 
 <slot />
 
