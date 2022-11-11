@@ -1,22 +1,21 @@
 <script>
   import { page } from "$app/stores";
-  import { db, Auth } from "../../../firebase";
+  import { db, Auth } from "../../../../firebase";
   import { doc, getDoc } from "firebase/firestore";
   import { onMount } from "svelte";
-  import { goto } from "$app/navigation";
-  // import Vignette from "$lib/vignette.svelte";
-  // import InpagePush from "$lib/inpagepush.svelte";
+  import { ClickCount } from "../../../../scroolStore";
 
   let title = "";
   let postId = "";
   let descriptionText = "";
   $: thumb = [];
 
+  $: code = $page.params.code;
   $: docID = $page.params.slug;
 
   async function getPost() {
     try {
-      const docRef = doc(db, "BLOGS", "CNMEDIA", "POSTS", docID);
+      const docRef = doc(db, "BLOGS", code, "POSTS", docID);
       const docSnap = await getDoc(docRef);
 
       if (docSnap.exists()) {
@@ -24,6 +23,8 @@
         descriptionText = docSnap.data().zDescription;
         postId = docSnap.data().post_Id;
         thumb = docSnap.data().thumb;
+
+        ClickCount.update(() => $ClickCount + 1);
       } else {
         console.log("No such document!");
       }
@@ -41,8 +42,6 @@
   <title>{title}</title>
   <meta name="robots" content="noindex nofollow" />
   <html lang="en" />
-  <!-- <Vignette />
-  <InpagePush /> -->
 </svelte:head>
 
 <div class=" fixed   bottom-0 right-0 z-20 ">
@@ -71,11 +70,11 @@
 </div>
 
 <div class="container w-full lg:px-10 px-5 py-5 lg:py-5 mx-auto">
-  <script
+  <!-- <script
     data-cfasync="false"
     type="text/javascript"
     src="//p450758.clksite.com/adServe/banners?tid=450758_885234_1"
-  ></script>
+  ></script> -->
   <div class="flex mt-9 mb-5">
     <h1
       class="text-gray-900  w-full lg:text-4xl md:text-4xl text-3xl   font-bold uppercase "
@@ -90,11 +89,11 @@
       alt=""
     />
 
-    <script
+    <!-- <script
       data-cfasync="false"
       type="text/javascript"
       src="//p450758.clksite.com/adServe/banners?tid=450758_885234_0"
-    ></script>
+    ></script> -->
 
     <div class="text-gray-900 text-xl mt-14 ">{@html descriptionText}</div>
   </div>

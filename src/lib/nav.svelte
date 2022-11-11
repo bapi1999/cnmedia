@@ -18,19 +18,11 @@
 
   let showLogoutforDesktop = false;
 
-  // $: percent =
   $: progress = ($ClickCount * 100) / $TotalClick;
   $: if (progress >= 100) {
     progress = 100;
   }
 
-  onMount(() => {
-    // window.onclick = function (event) {
-    //   if (mobileMenueVisible == true) {
-    //     mobileMenueVisible = false;
-    //   }
-    // };
-  });
   function menuToggle() {
     if (mobileMenueVisible) {
       let flyout = document.getElementById("mobile-menu");
@@ -60,7 +52,7 @@
 </script>
 
 <div
-  class=" top-0 w-full sticky z-20 shadow-md  px-4 bg-deep-orange-700 py-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
+  class=" top-0 w-full sticky z-20 shadow-md  px-4 bg-blue-gray-100 py-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
 >
   <div class="relative flex  items-center">
     <a
@@ -70,19 +62,8 @@
       class="flex  items-center text-white mr-5 "
     >
       <img src={cnmedia} alt="" class="w-7 h-7" />
-      <span class="ml-1 text-xl font-thin   text-white">CnMedia</span>
+      <span class="ml-1 text-xl font-normal   text-gray-900">Cn-Media</span>
     </a>
-    <!-- {#if $IsLoggedin == true && $AlreadyViewed == false}
-      <div class=" w-full flex pl-5 pr-2  items-center ">
-        
-        <div class="w-full bg-gray-300 rounded-full h-2.5">
-          <div
-            class="bg-indigo-accent-400 h-2.5 rounded-full"
-            style={`width: ${progress}%`}
-          />
-        </div>
-      </div>
-    {/if} -->
 
     <div class="ml-auto">
       <button
@@ -98,7 +79,11 @@
         {/if}
 
         {#if mobileMenueVisible == false}
-          <svg class="w-5 text-white " stroke-width="2" viewBox="0 0 24 24">
+          <svg
+            class="w-5 text-blue-gray-600  hover:text-blue-gray-900  "
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
             <path
               fill="currentColor"
               d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
@@ -167,7 +152,7 @@
             <div class="pl-3">
               <a href="/register" class="   ">
                 <span
-                  class="py-1 px-3 border-2 border-deep-orange-700 tex-base font-semibold rounded-full text-white "
+                  class="py-1 px-3 border-2 border-gray-300 tex-base font-semibold rounded-full text-white "
                 >
                   SIGN IN
                 </span>
@@ -244,6 +229,7 @@
 
             <a
               href="https://afiby.com/user/userDashboard"
+              rel="noopener noreferrer"
               target="_blank"
               title="Affiliate"
               class="   flex tracking-wide   "
@@ -278,7 +264,9 @@
 
             <li class="notSelected">
               <buttot
-                on:click={signOutUser}
+                on:click={() => {
+                  signOutUser;
+                }}
                 aria-label="Logout"
                 title="Logout"
                 class=" flex tracking-wide  "

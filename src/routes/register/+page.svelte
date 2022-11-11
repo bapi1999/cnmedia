@@ -137,6 +137,8 @@
     <span class="border-b w-1/5 md:w-1/4" />
     <a
       href="https://afiby.com/register/userSignup_0"
+      rel="noopener noreferrer"
+      target="_blank"
       class="text-xs flex  p-1 rounded-md "
     >
       <span> New user? </span>
