@@ -17,9 +17,33 @@
       <div class="  md:w-1/2 sm:w-full w-full mx-5 ">
         <div class="w-full bg-gray-500 rounded-full h-3 ">
           <div
-            class="bg-indigo-accent-400 h-3 rounded-full"
+            class="bg-blue-accent-700 h-3 rounded-full"
             style={`width: ${progress}%`}
           />
+        </div>
+      </div>
+    {:else if $IsLoggedin == true && $AlreadyViewed == true}
+      <div class="  md:w-1/2 sm:w-full w-full mx-5 h-6 ">
+        <div class=" flex text-center text-lg">
+          Already Visited this site <span
+            class="  m-auto bg-gradient-to-r from-[#28ca76] to-[#aaff00] ml-2 rounded-full"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="border-2 border-white rounded-full p-1"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M7 12l5 5l10 -10" />
+              <path d="M2 12l5 5m5 -5l5 -5" />
+            </svg></span
+          >
         </div>
       </div>
     {:else if $IsLoggedin == false}
