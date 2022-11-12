@@ -14,16 +14,27 @@
 >
   <div class="relative flex items-center">
     {#if $IsLoggedin == true && $AlreadyViewed == false}
-      <div class="  md:w-1/2 sm:w-full w-full mx-5 ">
-        <div class="w-full bg-gray-500 rounded-full h-3 ">
-          <div
-            class="bg-blue-accent-700 h-3 rounded-full"
-            style={`width: ${progress}%`}
-          />
+      <a
+        href="//whoursie.com/4/5520434"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <div class="  md:w-1/2 sm:w-full w-full mx-5 ">
+          <div class="w-full bg-gray-500 rounded-full h-3 ">
+            <div
+              class="bg-blue-accent-700 h-3 rounded-full"
+              style={`width: ${progress}%`}
+            />
+          </div>
         </div>
-      </div>
+      </a>
     {:else if $IsLoggedin == true && $AlreadyViewed == true}
-      <div class="  md:w-1/2 sm:w-full w-full mx-5 h-6 ">
+      <a
+        href="//whoursie.com/4/5520434"
+        target="_blank"
+        rel="noreferrer noopener"
+        class="  md:w-1/2 sm:w-full w-full mx-5 h-6 "
+      >
         <div class=" flex text-center text-lg">
           Already Visited this site <span
             class="  m-auto bg-gradient-to-r from-[#28ca76] to-[#aaff00] ml-2 rounded-full"
@@ -45,7 +56,7 @@
             </svg></span
           >
         </div>
-      </div>
+      </a>
     {:else if $IsLoggedin == false}
       <a href="/register" class=" mx-auto">
         <div class="  flex px-3 items-center justify-center ">

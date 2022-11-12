@@ -44,10 +44,10 @@
   }
 </script>
 
-<!-- <svelte:head>
+<svelte:head>
   <Vignette />
   <InpagePush />
-</svelte:head> -->
+</svelte:head>
 
 <div class="top-0 w-full sticky z-20 shadow-xl">
   <UserNavber {userName} {pathname} />

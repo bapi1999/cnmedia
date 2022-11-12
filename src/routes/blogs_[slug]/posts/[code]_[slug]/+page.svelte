@@ -85,33 +85,32 @@
 </div>
 
 <div class="container w-full lg:px-10 px-5 py-5 lg:py-5 mx-auto">
-  <!-- <script
-    data-cfasync="false"
-    type="text/javascript"
-    src="//p450758.clksite.com/adServe/banners?tid=450758_885234_1"
-  ></script> -->
-  <div class="flex mt-9 mb-5">
+  <a
+    href="//whoursie.com/4/5520434"
+    target="_blank"
+    rel="noreferrer noopener"
+    class="flex mt-9 mb-5"
+  >
     <h1
       class="text-gray-900  w-full lg:text-4xl md:text-4xl text-3xl   font-bold uppercase "
     >
       {title}
     </h1>
-  </div>
-  <div class=" w-full">
+  </a>
+  <a
+    href="//whoursie.com/4/5520434"
+    target="_blank"
+    rel="noreferrer noopener"
+    class=" w-full"
+  >
     <img
       src={thumb}
       class="object-scale-down object-center mx-auto mt-8 rounded-2xl "
       alt=""
     />
 
-    <!-- <script
-      data-cfasync="false"
-      type="text/javascript"
-      src="//p450758.clksite.com/adServe/banners?tid=450758_885234_0"
-    ></script> -->
-
     <div class="text-gray-900 text-xl mt-14 ">{@html descriptionText}</div>
-  </div>
+  </a>
 </div>
 
 <style>

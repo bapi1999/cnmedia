@@ -109,7 +109,12 @@
               {item.title}
             </p>
 
-            <div class="flex space-x-4">
+            <a
+              href="//whoursie.com/4/5520434"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="flex bg-red-400"
+            >
               <div class="">
                 <img src={CnMedia} class="w-6 h-6" alt="" />
               </div>
@@ -118,7 +123,7 @@
                   {new Date(item.postAt).toDateString("en-US")}
                 </p>
               </div>
-            </div>
+            </a>
           </div>
         </a>
       </div>
