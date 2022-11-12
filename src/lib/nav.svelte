@@ -215,11 +215,7 @@
             </a>
           </li>
 
-          <li
-            class=" {pathname === '/user/notification'
-              ? 'selected'
-              : 'notSelected'}  "
-          >
+          <!-- <li>
             {#if notificationCount > 0}
               <span
                 class="absolute  text-[7px] text-white px-1  h-3 max-w-[20px] inline-block overflow-hidden   bg-red-500 rounded-full"
@@ -255,7 +251,7 @@
 
               <span class="ml-2 text-sm ">Affiliate</span>
             </a>
-          </li>
+          </li> -->
 
           {#if $IsLoggedin == true}
             <li>
