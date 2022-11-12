@@ -9,11 +9,12 @@
   let postId = "";
   let descriptionText = "";
   $: thumb = [];
+  let firstRedirect = false;
 
   let showbtn = false;
   $: setTimeout(() => {
     showbtn = true;
-  }, 2000);
+  }, 4000);
 
   $: code = $page.params.code;
   $: docID = $page.params.slug;
@@ -39,6 +40,11 @@
       console.log("errpr in getPost from edit", error);
     }
   }
+
+  function open() {
+    firstRedirect = true;
+    window.open("//whoursie.com/4/5520434");
+  }
 </script>
 
 <svelte:head>
@@ -58,18 +64,16 @@
       <span class="text-xs text-white">Loading</span>
       <div class="ml-1 loader" />
     </a>
-  {:else}
+  {:else if firstRedirect == false && showbtn == true}
     <button
       on:click={() => {
-        ClickCount.update(() => $ClickCount + 1);
-        console.log("click count", $ClickCount);
-        history.back();
+        open();
       }}
-      class="rounded-full flex bg-rose-600 p-2 mr-8 mb-12 items-center justify-center"
+      class="rounded-full flex bg-rose-600 px-3 py-2 mr-8 mb-12 items-center justify-center"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="icon icon-tabler icon-tabler-arrow-back-up"
+        class="icon icon-tabler icon-tabler-checks"
         width="20"
         height="20"
         viewBox="0 0 24 24"
@@ -80,9 +84,37 @@
         stroke-linejoin="round"
       >
         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-        <path d="M9 13l-4 -4l4 -4m-4 4h11a4 4 0 0 1 0 8h-1" />
+        <path d="M7 12l5 5l10 -10" />
+        <path d="M2 12l5 5m5 -5l5 -5" />
       </svg>
-      <span class="text-sm font-semibold text-white ml-1 ">Back</span>
+      <span class="text-sm font-semibold text-white ml-1 ">Done</span>
+    </button>
+  {:else if firstRedirect == true && showbtn == true}
+    <button
+      on:click={() => {
+        ClickCount.update(() => $ClickCount + 1);
+        console.log("click count", $ClickCount);
+        history.back();
+      }}
+      class="rounded-full flex bg-rose-600 px-3 py-2 mr-8 mb-12 items-center justify-center"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-checks"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="#ffffff"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M7 12l5 5l10 -10" />
+        <path d="M2 12l5 5m5 -5l5 -5" />
+      </svg>
+      <span class="text-sm font-semibold text-white ml-1 ">Done</span>
     </button>
   {/if}
 </div>
