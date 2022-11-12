@@ -18,6 +18,7 @@
         href="//whoursie.com/4/5520434"
         target="_blank"
         rel="noreferrer noopener"
+        class="w-full"
       >
         <div class="  md:w-1/2 sm:w-full w-full mx-5 ">
           <div class="w-full bg-gray-500 rounded-full h-3 ">

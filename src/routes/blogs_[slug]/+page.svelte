@@ -104,7 +104,7 @@
           />
           <div class="py-5">
             <p
-              class="text-2xl font-bold  mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
+              class="text-2xl font-bold text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
             >
               {item.title}
             </p>
@@ -113,7 +113,7 @@
               href="//whoursie.com/4/5520434"
               target="_blank"
               rel="noreferrer noopener"
-              class="flex bg-red-400"
+              class="flex pt-3 "
             >
               <div class="">
                 <img src={CnMedia} class="w-6 h-6" alt="" />
