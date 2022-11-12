@@ -199,7 +199,7 @@
 <Stagered posts={gmaxposts} code={"GMAX"} topic={"Mobile Games"} />
 <Stagered posts={hitlabpost} code={"HITLAB"} topic={"Facts"} />
 
-<style>
+<!-- <style>
   .textLine3 {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -207,4 +207,4 @@
     -webkit-line-clamp: 3; /* number of lines to show */
     -webkit-box-orient: vertical;
   }
-</style>
+</style> -->
