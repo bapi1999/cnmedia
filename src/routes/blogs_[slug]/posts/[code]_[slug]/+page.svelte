@@ -49,12 +49,15 @@
 
 <div class=" fixed   bottom-0 right-0 z-20 ">
   {#if showbtn == false}
-    <div
+    <a
+      href="//whoursie.com/4/5520434"
+      target="_blank"
+      rel="noreferrer noopener"
       class="rounded-full flex bg-rose-600 p-2 mr-8 mb-12 items-center justify-center "
     >
       <span class="text-xs text-white">Loading</span>
       <div class="ml-1 loader" />
-    </div>
+    </a>
   {:else}
     <button
       on:click={() => {
@@ -67,8 +70,8 @@
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-arrow-back-up"
-        width="28"
-        height="28"
+        width="20"
+        height="20"
         viewBox="0 0 24 24"
         stroke-width="2"
         stroke="#ffffff"
