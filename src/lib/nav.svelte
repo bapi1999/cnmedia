@@ -261,7 +261,7 @@
             <li class="notSelected">
               <buttot
                 on:click={() => {
-                  signOutUser;
+                  signOutUser();
                 }}
                 aria-label="Logout"
                 title="Logout"

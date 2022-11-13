@@ -144,7 +144,7 @@
   </div>
 
   {#if alreadyuser == true}
-    <div class=" w-full px-6 mt-6 justify-center items-center bg-red-400">
+    <div class=" w-full px-6 mt-6 justify-center items-center">
       <p class="text-2xl text-center text-gray-800">Signed in successfully</p>
       <button
         on:click={() => {
