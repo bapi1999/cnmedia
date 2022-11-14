@@ -69,7 +69,7 @@
         await setDoc(doc(db, "USER", userID, "TODAYS_ADS_SITE", today), {
           siteList: siteList,
           ponitsGiven: false,
-          qotaCompleted: false,
+          points: 0,
           base: 79089,
         });
       } else {
