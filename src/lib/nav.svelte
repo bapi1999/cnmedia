@@ -145,7 +145,7 @@
               <span
                 class="  textLine1 uppercase px-3 tex-base font-bold text-white "
               >
-                {$UserName}
+                {userName}
               </span>
             </a>
           {:else}

@@ -61,7 +61,7 @@
         ...doc.data(),
         id: doc.id,
       }));
-      console.log("adSiteList", adSiteList);
+      // console.log("adSiteList", adSiteList);
     } catch (error) {
       console.error(error);
     }
