@@ -14,7 +14,7 @@
   let showbtn = false;
   $: setTimeout(() => {
     showbtn = true;
-  }, 4000);
+  }, 2000);
 
   $: code = $page.params.code;
   $: docID = $page.params.slug;
